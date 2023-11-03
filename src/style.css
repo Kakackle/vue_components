@@ -13,10 +13,20 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
+  --black: #242424;
+  --gray: #d3d3d3;
+  --gray-light: #e9e9e9;
+  --gray-dark: #505050;
   --color-1: ##3EFF8B;
   --color-2: #427AA1;
   --color-3: ##FFBC42;
   --color-4: ##CEC2FF;
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -32,4 +42,14 @@ body {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+}
+
+.icon-basic{
+  font-size: 24px;
+  color: var(--gray-dark);
+}
+
+.text-basic{
+  font-size: 24px;
+  color: var(--black);
 }
