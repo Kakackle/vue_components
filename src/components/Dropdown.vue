@@ -20,7 +20,7 @@ const isOpen = ref(false);
     <!--<ion-icon name="chevron-down-outline"></ion-icon>-->
     <div class="top">
         <p class="text-basic text-center">MENU</p>
-        <ion-icon name="menu-sharp" class="icon-basic icon-menu"
+        <ion-icon :name="isOpen? 'menu': 'chevron-down' + '-sharp'" class="icon-basic icon-menu"
         @click="isOpen = !isOpen"></ion-icon>
     </div>
     <!-- <p>{{ isOpen }}</p> -->
